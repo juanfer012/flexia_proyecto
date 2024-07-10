@@ -10,7 +10,7 @@
             <span>inicio</span>
         </a>
         <li>
-        <a href="#" onclick="mostrarAlerta()">
+        <a href="./rutinas/">
             <ion-icon name="barbell-outline"></ion-icon>
             <span>rutinas</span>
         </a>
@@ -36,7 +36,7 @@
    </div>
    <script>
     function mostrarAlerta() {
-    alert("¡Trabajaremos fuerte para habilitarlo papi rico <3 !");
+    alert("¡Trabajaremos fuerte para habilitarlo  !");
 }
    </script>
    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

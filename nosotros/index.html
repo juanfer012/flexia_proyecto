@@ -1,39 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <section>
-        <header>
-            <a href="../" class="logo">Flexia</a>
-            <ul class="navegation">
-              <li><a href="../" style="--i: 1" class="">Home</a></li>
-              <li><a href="./" style="--i: 2" class="active">Nosotros</a></li>
-              <li><a href="../dashboard" style="--i: 3">Empezar</a></li>
-            </ul>
-          </header>
-    </section>
-    <main>
-        <section class="card">
-          <h2>¿Quiénes somos?</h2>
-          <p>Somos estudiantes del grado undécimo de la Institución Educativa Gabriela Gómez Carvajal, cursando la media técnica de desarrollo de software.</p>
-        </section>
-        <section class="card">
-          <h2>¿Qué es Flexia?</h2>
-          <p>Flexia es un sitio web hecho para el acompañamiento y/o prevención de lesiones en adultos mayores, todo esto con el uso de la inteligencia artificial ayudando a la detección de movimiento y la creación de rutinas personalizadas.</p>
-        </section>
-        <section class="card">
-          <h2>¿Cómo nació Flexia?</h2>
-          <p>Flexia nace a partir de una primera lluvia de ideas, primeramente se planeó que fuera un sitio web centrado en las fisioterapias en los músculos inferiores, esa idea ha ido evolucionando hasta lo que hoy es Flexia.</p>
-        </section>
-      </main>
-      <footer>
-        <p>© 2024 Flexia. Todos los derechos reservados.</p>
-      </footer>
-</body>
-</html>
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section>
+    <header>
+      <a href="../" class="logo">Flexia</a>
+      <ul class="navegation">
+        <li><a href="index.html" style="--i: 1" class="">Home</a></li>
+        <li><a href="./" style="--i: 2" class="active">Nosotros</a></li>
+        <li><a href="../dashboard" style="--i: 3">Empezar</a></li>
+      </ul>
+    </header>
+    <div class="content">
+      <div class="txtbx">
+        <h2>¿Quienes somos?</h2>
+      </div>
+      <div class="txtbx-p">
+        <pre>Somos estudiantes de el grado undécimo de la institución 
+educativa Gabriela Gómez Carvajal,  cursando la media 
+técnica de desarrollacion de software, que se unieron
+para crear un proyecto</pre>
+      </div>
+    </div>
+    <div class="main-img">
+      <img src="../img/undraw_Personal_text_re_vqj3.png" alt="" class="main-img" />
+    </div>
+  </section>
+  <main>
+    <section class="presentacion">
+      <img src="../img/Captura de pantalla 2024-07-10 003312.png" class="presentacion_picture">
+      <h2 class="subtitle">¡Flexia quiere que empieces nuevos hábitos!</h2>
+      <p>¿Sabías que incorporar el ejercicio en tu rutina diaria puede mejorar significativamente tu calidad de vida? Si
+        sientes que es difícil comenzar o mantener una rutina de ejercicios, no te preocupes, ¡tenemos la solución
+        perfecta para ti! te invitamos a registrarte en nuestro sitio web</p>
+      <a href="" class="presentacion_cta">Registrate ahora</a>
+    </section>
+    <section class="about_container">
+      <div class="about_texts">
+        <h2 class="subtitle">¿Que es flexia?</h2>
+        <p class="about_paragraph">Flexia es un sitio web hecho para el acompañamiento y/o prevención de lesiones en
+          adultos mayores, todo esto con el uso de la inteligencia artificial ayudando a la detección de movimiento y la
+          creación de rutinas personalizadas</p>
+      </div>
+      <figure class="about_img">
+        <img src="../img/5961108.jpg" alt="" class="about_picture">
+      </figure>
+      <figure class="about_img--left">
+        <img src="../img/3297225.jpg" alt="" class="about_picture">
+      </figure>
+      <div class="about_texts">
+        <h2 class="subtitle">¿Como nacio flexia?</h2>
+        <p class="about_paragraph">Flexia nace a partir de una primera lluvia de ideas, primeramente se planeo que fuera
+          un sitio web centrado en las fisioterapias en los músculos inferiores, esa idea ha ido evolucionando hasta lo
+          que hoy es flexia</p>
+      </div>
+    </section>
+    <h2 class="subtitle_p">¿Que dicen de nosotros?</h2>
+    <section class="testimony container">
+      <div class="testimony_grid">
+        <article class="testimony_item">
+          <div class="testimony_person">
+            <img src="../img/imagenp.jpg" alt="" class="testimony_img">
+            <div class="testimony_text">
+              <h3 class="testimony_name">usuario 1</h3>
+              <p class="testimony_verificacion">aprovado por chayane</p>
+            </div>
+          </div>
+          <p class="testimony_review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam assumenda eaque,
+            animi harum asperiores odit incidunt id quo doloribus a.</p>
+        </article>
+        <article class="testimony_item">
+          <div class="testimony_person">
+            <img src="../img/imagenp.jpg" alt="" class="testimony_img">
+            <div class="testimony_text">
+              <h3 class="testimony_name">usuario 2</h3>
+              <p class="testimony_verificacion">aprovado por chayane</p>
+            </div>
+          </div>
+          <p class="testimony_review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam assumenda eaque,
+            animi harum asperiores odit incidunt id quo doloribus a.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
