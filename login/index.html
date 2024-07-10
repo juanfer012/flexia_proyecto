@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Inicio sesion flexia</title>
+  </head>
+  <body>
+    <div
+      class="min-h-screen bg-[#1E1E20] py-6 flex flex-col justify-center sm:py-12"
+    >
+      <div class="relative py-3 sm:max-w-xl sm:mx-auto">
+        <div
+          class="relative px-4 py-10 bg-[#13151a] mx-8 md:mx-0 shadow rounded-3xl sm:p-10"
+        >
+          <div class="max-w-md mx-auto">
+            <div class="flex items-center space-x-5">
+              <div
+                class="block pl-2 font-semibold text-xl self-start text-white"
+              >
+                <h2 class="leading-relaxed">Iniciar sesion</h2>
+                <p class="text-sm text-gray-500 font-normal leading-relaxed">
+                  Introduce tu correo electrónico y contraseña para iniciar
+                  sesion
+                </p>
+              </div>
+            </div>
+            <form action="./login.php" method="post">
+              <div class="flex flex-col">
+                <label class="leading-loose text-white"
+                  >Correo electrónico</label
+                >
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="px-4 py-2 border focus:ring-[#5eda5e] focus:border[#5eda5e] w-full sm:text-sm border-[#5eda5e] rounded-md focus:outline-none"
+                  placeholder="ejemplo@correo.com"
+                  required
+                />
+              </div>
+              <div class="flex flex-col">
+                <label class="leading-loose text-white">Contraseña</label>
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  class="px-4 py-2 border focus:ring-[#5eda5e] focus:border[#5eda5e] w-full sm:text-sm border-[#5eda5e] rounded-md focus:outline-none"
+                  placeholder="********"
+                  required
+                />
+              </div>
+              <button
+                type="submit"
+                class="flex justify-center items-center w-full text-white px-4 py-3 my-8 rounded-md focus:outline-none bg-[#5eda5e] hover:bg-[#27cfe6] hover:shadow-lg"
+              >
+                Iniciar sesion
+              </button>
+              <button
+                class="flex justify-center items-center w-full text-white px-4 py-3 my-8 rounded-md focus:outline-none bg-[#5eda5e] hover:bg-[#27cfe6] hover:shadow-lg"
+              >
+                <a href="../register/">Registrate</a>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="../" class="back-button">Volver Atrás</a>
+  </body>
+</html>
+
+<style is:global>
+  html {
+    font-family: system-ui, sans-serif;
+    background: #13151a;
+    background-size: 224px;
+    color-scheme: dark light;
+  }
+  .back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: rgb(30, 187, 179);
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 14px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.back-button:hover {
+    background-color: rgb(30, 187, 179);
+}
+</style>

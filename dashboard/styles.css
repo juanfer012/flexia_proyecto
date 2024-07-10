@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+*{
+    font-family: "Raleway", sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    flex-grow: 1;       
+}
+
+main p {
+    color: rgb(134,136,144);
+    margin-top: 10px;
+}
+
+.current-challenge {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+
+.current-challenge h2 {
+    margin-top: 0;
+}
+
+.current-challenge p{
+    margin-top: 10px;
+    color: rgb(134,136,144);
+}
+
+.challenge-progress {
+    
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.progress-step {
+    margin-top: 12px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.progress-step.completed {
+    background-color: rgb(30, 187, 179);
+}
+
+.start-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: rgb(30, 187, 179);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.start-button:hover {
+    background-color: rgb(30, 187, 179);
+}
+
+.a-button{
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.sidebar-box {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.sidebar-box p{
+    margin-bottom: 8px;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: rgb(30, 187, 179);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: rgb(30, 187, 179);
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .user-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-container {
+        padding: 10px;
+    }
+
+    .logo {
+        font-size: 1.5em;
+    }
+
+    .progress-step {
+        width: 40px;
+        height: 40px;
+        font-size: 1em;
+    }
+
+    .start-button, .cta-button {
+        width: 100%;
+        padding: 15px;
+    }
+}
